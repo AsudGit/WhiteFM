@@ -8,10 +8,10 @@ import java.util.Date;
 public class AnchorWorks {
     private  int anchor_worksId;
     private  String  works_name;
-    private  String works_type;
     private String author;
     private  int anchor_id;
     private  int like_num;
+    private String works_path;
     private String works_cover;
     private Date release_time;
     private  String  works_label;
@@ -19,6 +19,7 @@ public class AnchorWorks {
     private  int isBreachRule;
     private  int isCheck;
     private  int modi_num;
+    private  String works_context;
 
     public int getAnchor_worksId() {
         return anchor_worksId;
@@ -36,12 +37,20 @@ public class AnchorWorks {
         this.works_name = works_name;
     }
 
-    public String getWorks_type() {
-        return works_type;
+    public String getWorks_path() {
+        return works_path;
     }
 
-    public void setWorks_type(String works_type) {
-        this.works_type = works_type;
+    public void setWorks_path(String works_path) {
+        this.works_path = works_path;
+    }
+
+    public String getWorks_context() {
+        return works_context;
+    }
+
+    public void setWorks_context(String works_context) {
+        this.works_context = works_context;
     }
 
     public String getAuthor() {

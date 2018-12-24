@@ -4,6 +4,6 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.gdst.dao.StationMapper">
     <select id="QueryAllOffSongInfo" resultType="offical_works">
-      SELECT  * FROM  offical_works
+      SELECT works_name,works_path,works_cover,works_author FROM  offical_works
     </select>
 </mapper>

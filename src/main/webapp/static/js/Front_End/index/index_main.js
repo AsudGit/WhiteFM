@@ -3,12 +3,12 @@
  */
 window.onload = function() {
     var i=0;
-    var setConfig = {
+   /* var setConfig = {
 
         song : [
             {
 
-                title : '不再见',
+                title : '不再见xx',
                 src : 'static/music/station/song/李荣浩 - 你的背包 (Live).mp3',
                 cover : 'static/music/station/cover/cover.png'
             },
@@ -27,12 +27,16 @@ window.onload = function() {
         ],
         error : function(meg){
 
-            /*console.log(meg);*/
+            /!*console.log(meg);*!/
         }
-    };
+    };*/
 
 
 
+
+    var songs=[];
+
+    var audioFn=null;
     $.ajax({
         url:'/works/offworks',
         type:'GET',
@@ -40,14 +44,31 @@ window.onload = function() {
         async:true,
         dataType:'json',
         success:function (data) {
-            setConfig.song.length=data.length-1;
-            alert(setConfig.song.length);
-            for( i=0;i<data.length;i++){
-             setConfig.song[i].title=data[i].works_name;
-             setConfig.song[i].src=data[i].works_path;
-             setConfig.song[i].cover=data[i].works_cover ;
-               alert(  setConfig.song[i].title);
-             }
+            for( i=0;i<data.length-1;i++){
+                    var simplesong={
+                        title : data[i].works_name+'-'+data[i].works_author,
+                        src : data[i].works_path,
+                        cover : data[i].works_cover,
+                    }
+
+                    songs.push(simplesong);
+            }
+                var   setConfig = {
+                    song:  songs,
+                    error : function(meg){
+                        /*console.log(meg);*/
+                    }
+                };
+                audioFn =audioPlay(setConfig);
+
+
+                if(audioFn){
+
+                    //开始加载音频,true为播放,false不播放
+                    audioFn.loadFile(1);
+                }
+
+
 
         },
         error:function (data) {
@@ -57,13 +78,6 @@ window.onload = function() {
     });
 
 
-    var audioFn = audioPlay(setConfig);
-
-    if(audioFn){
-
-        //开始加载音频,true为播放,false不播放
-        audioFn.loadFile(1);
-    }
 
 }
 $(function(){

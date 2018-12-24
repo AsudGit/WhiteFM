@@ -31,7 +31,7 @@
     </div>
     <div class="song_context">
         <span class="song_name">歌名</span>
-        <span>作者</span>
+        <span class="audio_author">作者</span>
     </div>
     <div class="container container-fluid">
         <div class="audio-box"> <!--整体框-->
@@ -48,7 +48,7 @@
 
                     <div class="audio-body">
                         <h3 class="audio-title">未知歌曲</h3>
-                        <h3 class="audio-title">作者</h3>
+                        <h3 class="audio-title audio_author">作者</h3>
 
                         <div class="audio-backs">
                             <div class="audio-this-time">00:00</div>

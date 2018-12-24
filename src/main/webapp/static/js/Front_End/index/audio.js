@@ -271,8 +271,12 @@
 
 			//歌曲信息
 			elem.cover.style.backgroundImage = 'url("'+song.cover+'")';
-			elem.songTitle.innerText = song.title;
-           $('.song_name').text(song.title);
+
+			var index=song.title.indexOf('-');
+            elem.songTitle.innerText = song.title.substring(0,index);
+           $('.song_name').text(song.title.substring(0,index));
+           $('.audio_author').text(song.title.substring(index+1));
+
 			//总时长
 			(function getDuration(){
 
