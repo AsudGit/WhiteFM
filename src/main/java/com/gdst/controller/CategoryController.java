@@ -18,7 +18,7 @@ public class CategoryController {
     @Resource(name = "categoryService")
     private CategoryService categoryService;
 
-    @RequestMapping("/ind")
+    @RequestMapping("/indss")
     public ModelAndView in(){
         return new ModelAndView("index");
     }

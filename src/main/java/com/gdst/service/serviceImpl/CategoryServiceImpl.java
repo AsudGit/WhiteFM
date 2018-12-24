@@ -15,7 +15,8 @@ import java.util.List;
  */
 @Service("categoryService")
 public class CategoryServiceImpl implements CategoryService {
-    @Autowired
+
+    @Resource(name = "categoryMapper")
     private CategoryMapper categoryMapper;
 
     public List<Category> list() {

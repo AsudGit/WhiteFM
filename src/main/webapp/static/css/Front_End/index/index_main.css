@@ -1,0 +1,101 @@
+@charset "utf-8";
+.slide_top{
+    position: relative;
+    z-index: 999;
+    height: 470px;
+    background: #fafafa; /*#fafafa*/
+    overflow: hidden;
+}
+.logo{
+    height: 50px;
+    background: yellowgreen;
+    position: absolute;
+    top:8%;
+    left: 10%;
+}
+.login{
+    position: absolute;
+    right: 5%;
+    top:12%;
+
+
+
+}
+.login_title{
+    /*color: #8f8e94;*/
+    color: #030303;
+    font-family: "华文新魏";
+    font-size: 21px;
+}
+.login_title a{
+    color: #030303;
+    text-decoration: none;
+}
+.container{
+    height: 70%;
+    /*background-color: red;*/
+    position: relative;
+    top:25%;
+}
+.container .left{
+    height: 100%;
+    background: greenyellow;
+}
+.container  .right{
+    height: 100%;
+    background: palevioletred;
+}
+
+.totop{
+    position: absolute;
+    top: 110%;
+    right: 5%;
+    color: green;
+    font-size: 22px;
+    height: 25px;
+    cursor: pointer;
+}
+.tobottom{
+    position:absolute;
+    top:100px;
+    right: 10%;
+    color: green;
+    font-size: 22px;
+    height: 25px;
+    cursor: pointer;
+
+}
+.main_container{
+    position: relative;
+    height: 700px;
+    /*background: yellowgreen;*/
+}
+.nav_title{
+    width: 100%;
+    height: 15%;
+
+}
+.nav_title ul{
+    position: relative;
+    top:30%;
+    list-style-type: none;
+    margin-left: 23%;
+}
+.nav_title ul li{
+    float: left;
+    margin-right: 10%;
+    font-family: '华文新魏';
+    font-size: 20px;
+}
+.nav_title ul li a{
+    text-decoration: none;
+}
+.type_context{
+    width: 80%;
+    margin: auto;
+    height: 70%;
+    background: palevioletred;
+}
+.type_context ul{
+    list-style-type: none;
+}

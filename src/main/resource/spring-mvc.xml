@@ -12,12 +12,44 @@
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
 
     <!--扫描Controller,并将其生命周期纳入Spring管理-->
-    <context:component-scan base-package="com.gdst.controller"/>
+    <context:component-scan base-package="com.gdst"/>
     <!-- 开启SpringMVC注解模式 -->
-    <mvc:annotation-driven />
+
+    <!--消息装配器-->
+    <mvc:annotation-driven>
+        <mvc:message-converters register-defaults="true">
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <property name="supportedMediaTypes">
+                    <list>
+                        <value>text/html;charset=UTF-8</value>
+                        <value>application/json;charset=UTF-8</value>
+                    </list>
+                </property>
+            </bean>
+
+        </mvc:message-converters>
+    </mvc:annotation-driven>
 
     <!-- 静态资源默认servlet配置,静态页面，如html,css,js,images可以访问-->
     <mvc:default-servlet-handler />
+
+    <!-- 定义视图解析器，定义JSP文件的前缀和后缀，在开发的时候，会方便很多 -->
+    <!-- 配置多视图解析器，允许同样内容的数据呈现不同的view -->
+    <bean id="cnManager" class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean">
+
+        <!-- true表示支持参数匹配，可以根据请求参数的值确定MIME(资源的媒体类型)类型，默认的请求参数为fotmat -->
+        <property name="favorParameter" value="true"/>
+        <!-- 默认的数据展示格式 -->
+        <property name="defaultContentType" value="text/html"/>
+        <!-- 根据请求参数值和MIME类型的映射列表，即contentType以何种格式来展示，若请求中有.json,则会以application/json的格式展示 -->
+        <property name="mediaTypes">
+            <map>
+                <entry key="html" value="text/html;charset=UTF-8"></entry>
+                <entry key="json" value="application/json;charset=UTF-8"></entry>
+                <entry key="xml" value="application/xml;charset=UTF-8"></entry>
+            </map>
+        </property>
+    </bean>
 
     <!-- 视图定位 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">

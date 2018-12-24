@@ -2,12 +2,15 @@ package com.gdst.dao;
 
 import com.gdst.pojo.Category;
 import com.gdst.util.Page;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 /**
  * Created by 我的样子平平无奇 on 2018/12/20.
  */
+
+@Repository(value = "categoryMapper")
 public interface CategoryMapper {
     public int add(Category category);
 
