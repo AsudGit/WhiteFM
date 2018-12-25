@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #e6ecf0   ;
+}
+#main_box{
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+}
+#header_box{
+    width: 100vw;
+    height: 28vw;
+    overflow: hidden;
+    border: solid 1px #959595;
+}
+#header_box img{
+    width: 100%;
+    height: 100%;
+}
+#nav_box{
+    width: 100%;
+    height: 4vw;
+    position: relative;
+    border-bottom:  solid 1px #bbbbbb;
+    box-shadow: 0 5px 8px rgba(135, 135, 135, 0.2);
+}
+#head_img{
+    width: 10vw;
+    height: 10vw;
+    overflow: hidden;
+    position: absolute;
+    top: -5vw;
+    left: 13vw;
+    border: solid 3px white;
+    border-radius: 50%;
+    z-index: 2;
+}
+#head_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#nav{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+}
+#user_data{
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 0 0 28%;
+    float: left;
+}
+#user_data ul{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#user_data ul li{
+    width: 20%;
+    padding: 1.65% 0;
+    cursor: pointer;
+    display: inline-block;
+}
+#user_data ul p{
+    font-weight: bold;
+    color: #7f7f7f;
+    text-align: center;
+    font-size: 0.9vw;
+    font-family: 微软雅黑, serif;
+    line-height: 150%;
+    padding: 0;
+    margin: 0;
+}
+#operating_input{
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    float: right;
+    margin: 0 13% 0 0;
+}
+#operating_input input{
+    font-family: 幼圆, serif;
+    font-size: 0.85vw;
+    width: 7vw;
+    height: 2.5vw;
+    margin: 0.75vw 0;
+    color: #7a7a7a;
+    cursor: pointer;
+    background-color: rgba(230, 236, 240, 0);
+    border: solid 1px #7a7a7a;
+    border-radius: 100px;
+}
+#context_box{
+    width: 74%;
+    height:auto;
+    overflow: hidden;
+    margin: 1vw auto 3vw auto;
+}
+#context_other{
+    width: 20%;
+    height: auto;
+    float: left;
+    display: inline-block;
+}
+#user_info{
+    width: 100%;
+    height: auto;
+}
+#user_info ul{
+    padding: 0;
+    margin: 1vw 0;
+    list-style: none;
+}
+#user_info ul li{
+    width: 100%;
+    height: 1.5vw;
+}
+#user_info ul li p{
+    color: #686868;
+    margin: 0;
+    font-family: 幼圆, serif;
+    font-size: 0.9vw;
+    line-height: 1.5vw;
+}
+#re_nav{
+    width: 100%;
+    height: auto;
+    box-shadow: 1px 0 6px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+#re_nav ul{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#re_nav ul li{
+    width: 90%;
+    height: 1.5vw;
+    overflow: hidden;
+    padding: 0.75vw 0;
+    margin: 0 5%;
+    cursor: pointer;
+    border-bottom: solid 1px #a7a7a7;
+}
+#re_nav ul li img{
+    width: 1.5vw;
+    height: 1.5vw;
+    display: inline-block;
+    float: left;
+    object-fit: cover;
+}
+#re_nav ul li p{
+    color: dimgrey;
+    font-size: 0.8vw;
+    font-family: 幼圆, serif;
+    display: inline-block;
+    padding: 0 4%;
+    margin: 0;
+    line-height: 1.5vw;
+}
+#context_main{
+    width: 79%;
+    height: 500px;
+    margin-left: 1%;
+    display: inline-block;
+    background-color: #f6fcff;
+}
+#statement_box{
+    width: 100%;
+    height: 4vw;
+    overflow: hidden;
+}
+#this_message p{
+    font-family: "Segoe UI", serif;
+    font-size: 0.7vw;
+    color: #7f7f7f;
+}

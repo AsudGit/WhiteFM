@@ -1,0 +1,273 @@
+#main_box {
+    width: 23vw;
+    height: 28vw;
+    margin: auto;
+    border-radius: 5px;
+    border: solid 1px #c5c5c5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#login_box {
+    width: 100%;
+    height: 92%;
+    overflow: hidden;
+}
+
+#logo {
+    width: 70%;
+    height: 5vw;
+    overflow: hidden;
+    margin: 10% auto 2% auto;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#control {
+    width: 80%;
+    margin: auto;
+    height: auto;
+}
+
+#control input {
+    width: 49.2%;
+    height: 10%;
+    margin: auto;
+    color: #727272;
+    padding: 0;
+    font-size: 0.9vw;
+    font-family: 微软雅黑, serif;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-bottom: solid 1px #7d7d7d;
+}
+
+#control input:hover {
+    color: #2d883f;
+    border-bottom: solid 1px #2d883f;
+}
+#scroll_login{
+    width: 46vw;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    transition: all 0.4s;
+}
+#scroll_login_password{
+    width: 23vw;
+    height: auto;
+    overflow: hidden;
+    float: left;
+}
+#put_password input {
+    width: 60%;
+    height: 10%;
+    margin: 8% auto auto auto;
+    padding: 0 0.5vw;
+    font-size: 0.85vw;
+    font-family: "Segoe UI", serif;
+    display: block;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 1px #989898;
+}
+
+#u_Id_input {
+    position: relative;
+}
+
+#u_Id_input p {
+    position: absolute;
+    top: -0.65vw;
+    left: 5.5vw;
+    padding: 0 0.8%;
+    margin: 0;
+    font-size: 0.9vw;
+    color: red;
+    background-color: #ffffff;
+}
+
+#u_Password_input {
+    position: relative;
+}
+
+#u_Password_input p {
+    position: absolute;
+    top: -0.65vw;
+    left: 5.5vw;
+    margin: 0;
+    padding: 0 0.8%;
+    font-size: 0.9vw;
+    color: red;
+    background-color: #ffffff;
+}
+
+.do_input {
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    margin: 5% auto auto auto;
+}
+
+.emue_buttom {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+.emue_buttom input {
+    color: #2e9341;
+    font-family: 幼圆, serif;
+    font-size: 0.8vw;
+    margin: 0.2vw 0;
+    border: none;
+    display: block;
+    cursor: pointer;
+    padding: 0.3vw;
+    background-color: rgba(46, 147, 65, 0);
+}
+
+.emue_buttom input:hover {
+    transition: all 0.4s;
+    background-color: rgba(46, 147, 65, 0.1);
+}
+
+#login_butoom_password {
+    width: 50%;
+    height: auto;
+    float: right;
+}
+
+#login_butoom_password input {
+    width: 75%;
+    height: 8%;
+    overflow: hidden;
+    display: block;
+    margin: 0.5vw 0;
+    font-size: 0.75vw;
+    font-family: 幼圆, serif;
+    border-radius: 100px;
+    cursor: pointer;
+    float: right;
+    padding: 0;
+    color: #2d883f;
+    background-color: rgb(255, 255, 255);
+    border: solid 1px #2d883f;
+}
+
+#scroll_login_code{
+    width: 23vw;
+    height: auto;
+    overflow: hidden;
+    float: right;
+}
+#put_code input {
+    width: 60%;
+    height: 10%;
+    margin: 8% auto auto auto;
+    padding: 0 0.5vw;
+    font-size: 0.85vw;
+    font-family: "Segoe UI", serif;
+    display: block;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 1px #989898;
+}
+
+#u_Phone_input {
+    position: relative;
+}
+
+#u_phone_input p {
+    position: absolute;
+    top: -0.65vw;
+    left: 5.5vw;
+    margin: 0;
+    padding: 0 0.8%;
+    font-size: 0.9vw;
+    color: red;
+    background-color: #ffffff;
+}
+
+#code_input {
+    position: relative;
+    width: 13.8vw;
+    margin: auto;
+}
+#code_input input{
+    width: 49%;
+    height: 10%;
+    margin: 8% auto auto auto;
+    display: inline-block;
+    padding: 0 0.5vw;
+    font-size: 0.85vw;
+    font-family: "Segoe UI", serif;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 1px #989898;
+}
+
+#code_input p {
+    position: absolute;
+    top: 0.4vw;
+    left: 1vw;
+    margin: 0;
+    padding: 0 0.8%;
+    font-size: 0.9vw;
+    color: red;
+    background-color: #ffffff;
+}
+
+#getcode{
+    color: #919191;
+}
+#getcode:hover{
+    color: #2d883f;
+}
+
+#login_butoom_code {
+    width: 50%;
+    height: auto;
+    float: right;
+}
+
+#login_butoom_code input {
+    width: 75%;
+    height: 8%;
+    overflow: hidden;
+    display: block;
+    margin: 0.5vw 0;
+    font-size: 0.75vw;
+    font-family: 幼圆, serif;
+    border-radius: 100px;
+    cursor: pointer;
+    float: right;
+    padding: 0;
+    color: #2d883f;
+    background-color: rgb(255, 255, 255);
+    border: solid 1px #2d883f;
+}
+#title_d{
+    position: relative;
+    top: 2vw;
+    width: 100%;
+}
+#title_d p{
+    text-align: center;
+    font-size: 0.85vw;
+    font-family: 幼圆, serif;
+    color: #7f7f7f;
+    letter-spacing: 0.35vw;
+}
+#title_d p span{
+    letter-spacing: normal;
+}
