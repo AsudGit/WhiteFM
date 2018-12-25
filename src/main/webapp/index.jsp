@@ -14,6 +14,8 @@
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="static/css/Front_End/index/audio.css">
     <link rel="stylesheet" type="text/css" href="static/css/Front_End/index/index_main.css">
+    <link rel="stylesheet" type="text/css" href="static/css/Front_End/index/fivecontext.css">
+
     <title></title>
     <style>
 
@@ -108,13 +110,17 @@
     <!--栏目电台-->
     <div class=" type_context">
         <ul>
-            <li>
-                <div>
-                    <div><img src="images/cover.png"></div>
-                    <div><p>作品名</p></div>
-                    <div><p>作者</p></div>
+            <li class="copy">
+                <div class="personsong">
+                    <div class="personimg">
+                        <!--作品封面-->
+                    </div>
+                    <div class="song_info"><a href="#"><span>作品名</span></a></div>
+                    <div class="song_info"><a href="#"><span>作者</span></a></div>
                 </div>
+
             </li>
+
         </ul>
     </div>
 

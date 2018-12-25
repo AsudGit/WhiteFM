@@ -3,7 +3,19 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.gdst.dao.StationMapper">
+
     <select id="QueryAllOffSongInfo" resultType="offical_works">
       SELECT works_name,works_path,works_cover,works_author FROM  offical_works
+    </select>
+
+    <select id="QueryAllAnchSongInfo" resultType="anchorWorks">
+        SELECT anchor_worksId,works_name,author,anchor_id,works_cover FROM  anchor_works
+    </select>
+
+    <select id="QueryAnchSongInfo" resultType="anchorWorks">
+        SELECT * FROM  anchor_works where anchor_worksId=#{id}
+    </select>
+    <select id="QueryAnchInfo" resultType="anchor">
+        SELECT anchor_id,anchor_name FROM  anchor where anchor_id=#{anchor_id}
     </select>
 </mapper>

@@ -67,12 +67,13 @@
 }
 .main_container{
     position: relative;
-    height: 700px;
+    height: 800px;
     /*background: yellowgreen;*/
 }
 .nav_title{
     width: 100%;
     height: 15%;
+    /*background: rebeccapurple;*/
 
 }
 .nav_title ul{
@@ -90,11 +91,11 @@
 .nav_title ul li a{
     text-decoration: none;
 }
-.type_context{
+.type_context{ /*外围div*/
     width: 80%;
     margin: auto;
-    height: 70%;
-    background: palevioletred;
+    height: 67%;
+    /*background: palevioletred;*/
 }
 .type_context ul{
     list-style-type: none;

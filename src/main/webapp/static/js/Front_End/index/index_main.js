@@ -3,36 +3,6 @@
  */
 window.onload = function() {
     var i=0;
-   /* var setConfig = {
-
-        song : [
-            {
-
-                title : '不再见xx',
-                src : 'static/music/station/song/李荣浩 - 你的背包 (Live).mp3',
-                cover : 'static/music/station/cover/cover.png'
-            },
-            {
-
-                title : '你的背包',
-                src : 'static/music/station/陈学冬 - 不再见.mp3',
-                cover : 'static/music/station/cover/cover1.jpg'
-            },
-            {
-
-                title : 'xxx',
-                src : 'static/music/station/陈学冬 - 不再见.mp3',
-                cover : 'static/music/station/cover/cover1.jpg'
-            }
-        ],
-        error : function(meg){
-
-            /!*console.log(meg);*!/
-        }
-    };*/
-
-
-
 
     var songs=[];
 
@@ -47,12 +17,13 @@ window.onload = function() {
             for( i=0;i<data.length-1;i++){
                     var simplesong={
                         title : data[i].works_name+'-'+data[i].works_author,
-                        src : data[i].works_path,
+                        src :   data[i].works_path,
                         cover : data[i].works_cover,
                     }
 
                     songs.push(simplesong);
             }
+
                 var   setConfig = {
                     song:  songs,
                     error : function(meg){
@@ -60,6 +31,7 @@ window.onload = function() {
                     }
                 };
                 audioFn =audioPlay(setConfig);
+
 
 
                 if(audioFn){
@@ -80,6 +52,7 @@ window.onload = function() {
 
 
 }
+
 $(function(){
 
     //切换内容

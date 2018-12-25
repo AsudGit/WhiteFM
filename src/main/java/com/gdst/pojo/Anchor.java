@@ -6,7 +6,6 @@ package com.gdst.pojo;
 public class Anchor {
      private  int anchor_id;
      private String anchor_name;   //主播名
-     private int works_id;       //作品id
      private  int attention_num;  //关注数
      private int transpond_num; //转发数
      private  int listener_num;   //听总数
@@ -28,13 +27,7 @@ public class Anchor {
         this.anchor_name = anchor_name;
     }
 
-    public int getWorks_id() {
-        return works_id;
-    }
 
-    public void setWorks_id(int works_id) {
-        this.works_id = works_id;
-    }
 
     public int getAttention_num() {
         return attention_num;
