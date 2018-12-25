@@ -4,6 +4,7 @@
        xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jdbc="http://www.springframework.org/schema/jdbc"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd
         http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
@@ -13,6 +14,7 @@
 
     <!--扫描Controller,并将其生命周期纳入Spring管理-->
     <context:component-scan base-package="com.gdst"/>
+    <context:component-scan base-package="com.mnilsy.controller"/>
     <!-- 开启SpringMVC注解模式 -->
 
     <!--消息装配器-->
@@ -31,7 +33,7 @@
     </mvc:annotation-driven>
 
     <!-- 静态资源默认servlet配置,静态页面，如html,css,js,images可以访问-->
-    <mvc:default-servlet-handler />
+    <mvc:default-servlet-handler/>
 
     <!-- 定义视图解析器，定义JSP文件的前缀和后缀，在开发的时候，会方便很多 -->
     <!-- 配置多视图解析器，允许同样内容的数据呈现不同的view -->
@@ -51,11 +53,15 @@
         </property>
     </bean>
 
+    <!--静态资源-->
+    <mvc:resources mapping="/**" location="/static"/>
     <!-- 视图定位 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" p:prefix="/WEB-INF/view/"
+          p:suffix=".jsp"/>
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass"
-                  value="org.springframework.web.servlet.view.JstlView" />
-        <property name="prefix" value="/WEB-INF/jsp/" />
-        <property name="suffix" value=".jsp" />
+                  value="org.springframework.web.servlet.view.JstlView"/>
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="suffix" value=".jsp"/>
     </bean>
 </beans>
